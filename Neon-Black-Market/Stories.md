@@ -1,6 +1,6 @@
-Vendors and users are having issues loging in.
-As a user I would like to review purchase history and be able to maybe return packets
-Activity needs ti be syncronized and that what I would like as user
-As an admin, I woud like to see account info to accurantly provide support
-I want to investigate issues iwth the transactions, either monetary or maybe time wise
-As a shopper browsing I want to be bale to leave reviews and that said reviews are verified and tied to my account
+- Vendors and users are having issues loging in.
+- As a user I would like to review purchase history and be able to maybe return packets
+- Activity needs ti be syncronized and that what I would like as user
+- As an admin, I woud like to see account info to accurantly provide support
+- I want to investigate issues iwth the transactions, either monetary or maybe time wise
+- As a shopper browsing I want to be bale to leave reviews and that said reviews are verified and tied to my account
