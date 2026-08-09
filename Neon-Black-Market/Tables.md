@@ -1,54 +1,66 @@
-REVIEWS
-Column	Data Type	Key or Purpose
-review_id	SERIAL	Primary key
-username	VARCHAR(50)	Foreign key to ACCOUNT_ISSUE.username
-rating	SMALLINT	Rating from 1 through 5
-review_timestamp	TIMESTAMP	Date and time of the review
-transaction_id	BIGINT	Foreign key to PURCHASE_HISTORY.transaction_id; may be empty if the purchase is not verified
-TRANSACTION_ISSUES
-Column	Data Type	Key or Purpose
-issue_id	SERIAL	Primary key
-username	VARCHAR(50)	Foreign key to ACCOUNT_ISSUE.username
-transaction_id	BIGINT	Transaction reference number
-issue_timestamp	TIMESTAMP	Date and time the issue occurred
-issue_type	VARCHAR(100)	Examples: did not go through, did not record, or product ID missing
+REVIWES
+- This table keeps track of reviews left by users.
+- Review ID – a different number for every review. This is the primary key.
+- Username – the username of the person leaving the review. This connects to ACCOUNT_ISSUE.
+- Rating – a number from 1 to 5.
+- Time of review – when the review was left.
+- Verified purchase – yes or no.
+- Displayed yes or no, depending on whether the review is being shown.
+
+TRANSACTION ISSUES
+- This table keeps track of problems with transactions.
+- Issue ID – a different number for every issue. This is the primary key.
+- Username – the user or vendor reporting the issue. This connects to ACCOUNT_ISSUE.
+  -Time of transaction – when the transaction happened.
+  -Type of issue – for example, did not go through, did not record, or product ID was not assigned.
+- Transaction ID – the number connected to the transaction.
+
 ACCOUNT_ISSUE
-Column	Data Type	Key or Purpose
-username	VARCHAR(50)	Primary key
-first_name	VARCHAR(50)	Account holder’s first name
-last_name	VARCHAR(50)	Account holder’s last name
-account_type	VARCHAR(20)	User or vendor
-status	VARCHAR(20)	Active or inactive
+- This table keeps track of account information and account status.
+- Username – the username connected to the account. This is the primary key.
+- First name – the account holder’s first name.
+- Last name – the account holder’s last name.
+- Account type – user or vendor.
+- Status – active or inactive.
+- Age of account – how long the account has existed.
+
 SYNC
-Column	Data Type	Key or Purpose
-sync_id	SERIAL	Primary key
-username	VARCHAR(50)	Foreign key to ACCOUNT_ISSUE.username
-last_login	TIMESTAMP	Most recent login time
-device_type	VARCHAR(30)	Computer or mobile
-ip_address	VARCHAR(45)	Device IP address
+- This table keeps track of devices and login activity connected to an account.
+- Sync ID – a different number for every sync record. This is the primary key.
+- Username – the account being used. This connects to ACCOUNT_ISSUE.
+- Last login – the last time the account logged in.
+- Device type – computer or mobile.
+- IP address – the IP address used for the login.
+
 PURCHASE_HISTORY
-Column	Data Type	Key or Purpose
-transaction_id	BIGINT	Primary key
-username	VARCHAR(50)	Foreign key to ACCOUNT_ISSUE.username
-purchase_timestamp	TIMESTAMP	Date and time of purchase
-payment_method	VARCHAR(30)	Card, digital wallet, or peer-to-peer
-return_required	BOOLEAN	Yes or no
+- This table keeps track of previous purchases.
+- Transaction ID – the number connected to the purchase. This is the primary key.
+- Username – the person who made the purchase. This connects to ACCOUNT_ISSUE.
+- Time of purchase – when the purchase happened.
+- Payment method – card, digital wallet, or peer-to-peer payment.
+- Address – the address connected to the purchase.
+- Return required – yes or no.
+
 LOGIN_ISSUES
-Column	Data Type	Key or Purpose
-login_issue_id	SERIAL	Primary key
-username	VARCHAR(50)	Foreign key to ACCOUNT_ISSUE.username
-last_login	TIMESTAMP	Most recent successful login
-issue_type	VARCHAR(100)	Examples: automatic logout, cannot log in, or password not recognized
-reported_at	TIMESTAMP	Date and time the issue was reported
-Relationships
-REVIEWS.username references ACCOUNT_ISSUE.username.
 
-REVIEWS.transaction_id references PURCHASE_HISTORY.transaction_id.
+- This table keeps track of problems users and vendors have while logging in or out.
+- Login issue ID – a different number for every login problem. This is the primary key.
+- Username – the account having the problem. This connects to ACCOUNT_ISSUE.
+- Last login – the last successful login.
+- Type of issue – automatic logout, cannot log in, password not recognized, username not recognized, or cannot log out.
+- Recent activity – whether the account was active recently.
+- Account type – user or vendor.
 
-TRANSACTION_ISSUES.username references ACCOUNT_ISSUE.username.
+HOW THE TABLES CONNECT
+- Username connects the account table to reviews, transaction issues, sync records, purchase history, and login issues.
+- Transaction ID can connect reviews and transaction issues to purchase history.
+- A primary key identifies one specific record.
+- A foreign key connects information in one table to information in another table.
 
-SYNC.username references ACCOUNT_ISSUE.username.
-
-PURCHASE_HISTORY.username references ACCOUNT_ISSUE.username.
-
-LOGIN_ISSUES.username references ACCOUNT_ISSUE.username.
+RELATIONSHIP
+(REVIEWS table; column username) references (ACCOUNT_ISSUE table; column username)
+(REVIEWS table; column transaction_id) references (PURCHASE_HISTORY table; column transaction_id)
+(TRANSACTION_ISSUES table; column username) references (ACCOUNT_ISSUE table; column username)
+(SYNCtable; column username) references (ACCOUNT_ISSUE table; column username)
+(PURCHASE_HISTORY table; column username) references (ACCOUNT_ISSUE table; column username)
+(LOGIN_ISSUES table; columnuser name) references (ACCOUNT_ISSUEtable; column username)
