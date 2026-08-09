@@ -1,3 +1,8 @@
+Here is the git URL: https://github.com/emmanuelle898/Ontiveros_ASF_F26.git
+
+Here is the explanation of each table as well as the file describint each table
+
+
 REVIWES
 - This table keeps track of reviews left by users.
 - Review ID – a different number for every review. This is the primary key.
@@ -58,9 +63,9 @@ HOW THE TABLES CONNECT
 - A foreign key connects information in one table to information in another table.
 
 RELATIONSHIP
-(REVIEWS table; column username) references (ACCOUNT_ISSUE table; column username)
-(REVIEWS table; column transaction_id) references (PURCHASE_HISTORY table; column transaction_id)
-(TRANSACTION_ISSUES table; column username) references (ACCOUNT_ISSUE table; column username)
-(SYNCtable; column username) references (ACCOUNT_ISSUE table; column username)
-(PURCHASE_HISTORY table; column username) references (ACCOUNT_ISSUE table; column username)
-(LOGIN_ISSUES table; columnuser name) references (ACCOUNT_ISSUEtable; column username)
+- (REVIEWS table; column username) references (ACCOUNT_ISSUE table; column username)
+- (REVIEWS table; column transaction_id) references (PURCHASE_HISTORY table; column transaction_id)
+- (TRANSACTION_ISSUES table; column username) references (ACCOUNT_ISSUE table; column username)
+- (SYNCtable; column username) references (ACCOUNT_ISSUE table; column username)
+- (PURCHASE_HISTORY table; column username) references (ACCOUNT_ISSUE table; column username)
+- (LOGIN_ISSUES table; columnuser name) references (ACCOUNT_ISSUEtable; column username)
