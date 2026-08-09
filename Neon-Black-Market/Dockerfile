@@ -1,0 +1,7 @@
+FROM postgres:16
+
+ENV POSTGRES_USER=admin
+ENV POSTGRES_PASSWORD=secret
+ENV POSTGRES_DB=sql_docker
+
+EXPOSE 5432
