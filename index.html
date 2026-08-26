@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title style="background-color: red">Form Demo 2</title>
+</head>
+<body style="background-image: URL(https://wallpaper.forfun.com/fetch/32/3292e8f6244458156976857a682748d8.jpeg);
+fontcolor: white" ><center>
+
+
+<form action="/api/getData" method="get">
+
+  <text><H1 style="color: white"> Galactic Summit registration</H1></text>
+
+  <label Style="color:white"> Representative Name
+    <input
+          type="name" maxlength="20"
+          name="rep_id"
+          placeholder="Enter the Rep Name"
+          id="">
+  </label>
+  <br>
+  <label Style="color:white"> Galactic Communications
+  <input
+          type="text" maxlength="100"
+          name="galactic_communication"
+          placeholder="Galactic Communications"
+          id="">
+  </label>
+  <br>
+  <label Style="color:white"> Crew Size Attending
+  <input
+          type=number minlength="1" maxlength="8"
+          name="size of crew"
+          placeholder="Enter your Party's size (crew)"
+          id="">
+  </label>
+  <br>
+  <label Style="color:white" > Which Sci-Fi Universe Do you Belong to:
+    <br>
+  <input
+         type="checkbox"
+          name="Farscape"
+          value="Farscape"
+          placeholder="Enter Alliance (Universe)"
+          id="">
+    Farscape
+    <br>
+  <input
+          type="checkbox"
+          name="Star Wars"
+          value="Star Wars"
+          placeholder="Enter Alliance (Universe)">
+    Star Wars
+    <br>
+  <input
+          type="checkbox"
+          name="Star Trek"
+          value="Star Trek"
+          placeholder="Enter Alliance (Universe)">
+    Star Trek
+    <br>
+
+  </label>
+  <br>
+  <label Style="color:white"> Summit Updates
+  <input
+          type="text"
+          name="commentInfo"
+          placeholder="Updates"
+          id="">
+  </label>
+  <br>
+  <label Style="color:white"> Additional Comments/Concerns
+
+  <input type="radio" name="show_comments" value="yes"> Yes
+
+  <input type="radio" name="show_comments" value="no" checked> No
+
+  <input
+          type="text"
+          name="textFromUser"
+          placeholder="Comments/Concerns"
+          id="">
+</label>
+  <br>
+
+  <hr style="color: darkred">
+<button type="reset"; style="background-color: mediumspringgreen"> RESET </button>
+<br>
+<button type="submit"; style="background-color: orangered"> SUBMIT </button>
+  </center></form>
+
+
+
+</body>
+</html>
