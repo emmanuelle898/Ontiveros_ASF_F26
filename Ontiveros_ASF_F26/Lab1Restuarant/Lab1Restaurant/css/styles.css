@@ -1,0 +1,184 @@
+body {
+  background-color: #111111;
+  color: #eeeeee;
+  font-family: "Cinzel", serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  color: #c9a227;
+  text-align: center;
+}
+
+h2,h3 {
+  font-family: "Cinzel", serif;
+  color: #c9a227;
+}
+
+nav {
+  background-color: #4b0000;
+  display: flex;
+  text-align: left;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  padding: 8px;
+}
+
+nav a:hover {
+  background-color: #c9a227;
+  color: #111111;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.border-style {
+  background-color: #1c1c1c;
+  border: 3px solid #6b0000;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px black;
+  text-align: center;
+}
+
+.moto {
+  text-align: center;
+  font-style: italic;
+}
+
+.logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.content-section {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-images {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  gap: 10px;
+  display: flex;
+}
+
+table {
+  width: 100%;
+}
+
+caption {
+  font-family: "Cinzel", serif;
+  font-size: 24px;
+  color: #c9a227;
+  margin-bottom: 15px;
+}
+
+th {
+  background-color: #650000;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #777777;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #292929;
+  margin: auto;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #1a1a1a;
+  margin: auto;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.boxes-form {
+  margin-bottom: 25px;
+}
+
+.boxes-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input, select{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #777777;
+}
+
+legend {
+  color: #c9a227;
+}
+
+.radio-option label{
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.radio-option input {
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.button-area {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #650000;
+  color: white;
+  border: 1px solid #c9a227;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #8b0000;
+}
+
+footer {
+  background-color: #4b0000;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
