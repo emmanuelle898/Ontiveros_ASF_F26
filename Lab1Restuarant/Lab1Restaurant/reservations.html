@@ -1,0 +1,402 @@
+<!doctypehtml>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
+  <title>Reservations</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="reservations.html">Reservations</a>
+  </nav>
+
+</header>
+
+<main>
+
+  <section class="logo>">
+    <img class="logo"
+         src="imgages/Sith%20logo.png"
+         alt="logo">
+
+    <h1>The Crimson Hound Foundry</h1>
+    <p class="moto"> Loyalty, Discipline, Tradition, Excellence.</p>
+  </section>
+
+  <section class="border-style">
+
+    <h1> Request a reservation</h1>
+    <p>Reservation at the Hound Foundry are request only. Submiting this form does not guarantee table.</p>
+    <p></p>
+    <p>We reserve the right to slay you where you stand if you do a walk-in</p>
+  </section>
+
+  <section class="border-style">
+
+    <h3> Request a reservation at our Original Location</h3>
+      <p>Request a reservation where everything began...</p>
+      <p></p>
+      <p>We reserve the right to slay you where you stand if you walk-in</p>
+      <img src="imgages/original%20location.png";
+           alt="Original location">
+
+    <form>
+      <div class="boxes-form">
+        <label for="guest-name">Name</label>
+        <input type="text"
+               name="guest-name"
+               id="guest-name"
+               maxlength="25"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="guest-email">Email</label>
+        <input type="email"
+               id="guest-email"
+               name="guest-email"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="group-size">Party Size</label>
+        <select id="group-size"
+                name="group size"
+                required>
+          <option value="select a number">Party Size</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+
+      <div class="boxes-form">
+        <label for="reservation-date">Date of Reservation</label>
+        <input type="date"
+               id="reservation-date"
+               name="reservation-date"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="reservation-time">Time of Reservation</label>
+        <input type="time"
+               id="reservation-time"
+               name="reservation-time"
+               required>
+      </div>
+
+      <fieldset>
+
+        <legend>Seating Preference</legend>
+
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-hall"
+                 name="seating-preference-hall"
+                 value="main hall">
+          <label for="seating-preference-yes">Main Hall</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-bar"
+                 name="seating-preference-bar"
+                 value="bar">
+          <label for="seating-preference-bar">Bar Area</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-entretainment"
+                 name="seating-preference"
+                 value="entretainment">
+          <label for="seating-preference-entretainment">Entretainment Hall/Holotable</label>
+        </div>
+
+      </fieldset>
+
+      <div class="boxes-form">
+
+        <label for="dietary-preference">Dietary Preference/Notes</label>
+        <textarea id="dietary-preference"
+                  name="dietary-preference"
+                  maxlength="100"></textarea>
+
+      </div>
+      <div class="newsletter">
+        <input type="checkbox"
+               id="newsletter"
+               name="newsletter">
+        <label for="newsletter">Check this if you wish to join a more selective circle
+        and claim the knowledge to shape your destiny.</label>
+      </div>
+      <div class="button">
+        <button type="submit">Submit Request</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="border-style">
+
+    <h3> Request a reservation at our Second Location</h3>
+    <p>Request a reservation at our second location. Always two there are...maybe more depends on the flow of credits</p>
+    <p></p>
+    <p>We reserve the right to slay you where you stand if you walk-in</p>
+    <img
+      src="imgages/secondary%20location.png";
+      alt="Secondary location">
+
+    <form>
+
+      <div class="boxes-form">
+        <label for="guest-name">Name</label>
+        <input type="text"
+               name="guest-name"
+               id="guest-name2"
+               maxlength="25"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="guest-email">Email</label>
+        <input type="email"
+               id="guest-email2"
+               name="guest-email"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="group size">Party Size</label>
+        <select id="group size2"
+                name="group size"
+                required>
+          <option value="select a number">Party Size</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+
+      <div class="boxes-form">
+        <label for="reservation-date">Date of Reservation</label>
+        <input type="date"
+               id="reservation-date2"
+               name="reservation-date"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="reservation-time">Time of Reservation</label>
+        <input type="time"
+               id="reservation-time2"
+               name="reservation-time"
+               required>
+      </div>
+
+      <fieldset>
+
+        <legend>Seating Preference</legend>
+
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-hall2"
+                 name="seating-preference"
+                 value="main hall">
+          <label for="seating-preference-yes">Main Hall</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-bar2"
+                 name="seating-preference"
+                 value="bar">
+          <label for="seating-preference-bar">Bar Area</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-entretainment2"
+                 name="seating-preference"
+                 value="entretainment">
+          <label for="seating-preference-entretainment">Entretainment Hall/Holotable</label>
+        </div>
+
+      </fieldset>
+
+      <div class="boxes-form">
+
+        <label for="dietary-preference">Dietary Preference/Notes</label>
+        <textarea id="dietary-preference2"
+                  name="dietary-preference"
+                  maxlength="100"></textarea>
+
+      </div>
+      <div class="newsletter">
+        <input type="checkbox"
+               id="newsletter2"
+               name="newsletter">
+        <label for="newsletter">Check this if you wish to join a more selective circle
+          and claim the knowledge to shape your destiny.</label>
+      </div>
+      <div class="button">
+        <button type="submit">Submit Request</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="border-style">
+
+    <h3> Request a reservation at our Triumvirate Location</h3>
+    <p>Request a reservation at the Triumvirate Location</p>
+    <p></p>
+    <p>We reserve the right to slay you where you stand if you walk-in</p>
+    <img
+      class="reservations";
+      src="imgages/third%20location.png";
+      alt="Third location">
+
+    <form>
+
+      <div class="boxes-form">
+        <label for="guest-name">Name</label>
+        <input type="text"
+               name="guest-name"
+               id="guest-name3"
+               maxlength="25"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="guest-email">Email</label>
+        <input type="email"
+               id="guest-email3"
+               name="guest-email"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="group size">Party Size</label>
+        <select id="group size"
+                name="group size"
+                required>
+          <option value="select a number">Party Size</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+
+      <div class="boxes-form">
+        <label for="reservation-date">Date of Reservation</label>
+        <input type="date"
+               id="reservation-date3"
+               name="reservation-date"
+               required>
+      </div>
+
+      <div class="boxes-form">
+        <label for="reservation-time">Time of Reservation</label>
+        <input type="time"
+               id="reservation-time3"
+               name="reservation-time"
+               required>
+      </div>
+
+      <fieldset>
+
+        <legend>Seating Preference</legend>
+
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-yes"
+                 name="seating-preference"
+                 value="main hall">
+          <label for="seating-preference-yes">Main Hall</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-bar3"
+                 name="seating-preference"
+                 value="bar">
+          <label for="seating-preference-bar">Bar Area</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio"
+                 id="seating-preference-entretainment3"
+                 name="seating-preference"
+                 value="entretainment">
+          <label for="seating-preference-entretainment">Entretainment Hall/Holotable</label>
+        </div>
+
+      </fieldset>
+
+      <div class="boxes-form">
+
+        <label for="dietary-preference">Dietary Preference/Notes</label>
+        <textarea id="dietary-preference3"
+                  name="dietary-preference"
+                  maxlength="100"></textarea>
+
+      </div>
+      <div class="newsletter">
+        <input type="checkbox"
+               id="newsletter3"
+               name="newsletter">
+        <label for="newsletter">Check this if you wish to join a more selective circle
+          and claim the knowledge to shape your destiny.</label>
+      </div>
+      <div class="button">
+        <button type="submit">Submit Request</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+  </section>
+
+</main>
+
+<footer>
+<p>&copy; 49 ABY(After the Battle of Yavin) The Crimson Hound Foundry</p>
+</footer>
+
+</body>
+
+</html>
