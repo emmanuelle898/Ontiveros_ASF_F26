@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>The Crimson Hound Foundry</title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="css/styles.css">
+
+  <meta name="description"
+        content="Visit The Crimson Hound Foundry for food, entertainment, and gathering in the industrial district.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Metamorphous&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          crossorigin="anonymous" defer></script>
+  <script src="script.js" defer> </script>
+
+
+</head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg foundry-navbar" aria-label="Main navigation" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img class="navbar-logo" src="images/Sith%20logo.png" alt="" width="44" height="44">
+            <span>The Crimson Hound Foundry</span>
+          </a>
+          <button class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#main-navigation"
+                  aria-controls="main-navigation"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="reservations.html">Reservations</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </header>
+
+    <main class="container my-4">
+
+      <div class="row">
+
+        <div class="col-12">
+
+          <section class="brand-hero mb-4">
+            <img class="logo" src="images/Sith%20logo.png" alt="The Crimson Hound Foundry emblem">
+            <h1>The Crimson Hound Foundry</h1>
+            <p class="moto"> Loyalty, Discipline, Tradition, Excellence.</p>
+          </section>
+
+          <section class="border-style">
+            <h2> Request a reservation</h2>
+            <p>Reservation at the Hound Foundry are request only. Submiting this form does not guarantee table.</p>
+            <p>We reserve the right to slay you where you stand if you do a walk-in</p>
+            <p class="small">Class demo: requests are validated here and logged in the browser console. They are not sent to the restaurant.</p>
+          </section>
+
+          <section class="border-style">
+            <h2 id="location-original"> Request a reservation at our Original Location</h2>
+            <p>Request a reservation where everything began...</p>
+            <p>We reserve the right to slay you where you stand if you walk-in</p>
+            <img src="images/original%20location.png" alt="Original location" loading="lazy">
+            <noscript>
+              <p>Enable JavaScript to validate a reservation request.</p>
+            </noscript>
+            <form id="reservation-original"
+                  class="reservation-form mt-4"
+                  data-location="Original Location"
+                  novalidate=""
+                  aria-labelledby="location-original">
+
+              <div class="reservation-feedback"
+                   aria-live="polite"
+                   aria-atomic="true"></div>
+
+              <div class="row g-3">
+
+                <div class="boxes-form col-12 col-md-6">
+
+                  <label for="guest-name"
+                         class="form-label">Name (required, maximum 20 characters)</label>
+                  <input type="text"
+                         name="guest-name"
+                         id="guest-name"
+                         class="form-control"
+                         aria-required="true"
+                         autocomplete="name">
+                </div>
+
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="guest-email"
+                         class="form-label">Email (required)</label>
+                  <input type="email"
+                         id="guest-email"
+                         name="guest-email"
+                         class="form-control"
+                         aria-required="true"
+                         autocomplete="email">
+                </div>
+
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="group-size" class="form-label">Party size (required)</label>
+                  <select id="group-size" name="group-size" class="form-select" aria-required="true">
+                    <option value="">Party Size</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="reservation-date"
+                         class="form-label">Date of reservation (required)</label>
+                  <input type="date"
+                         id="reservation-date"
+                         name="reservation-date"
+                         class="form-control"
+                         aria-required="true">
+                </div>
+
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="reservation-time"
+                         class="form-label">Time of reservation (required)</label>
+                  <input type="time"
+                         id="reservation-time"
+                         name="reservation-time"
+                         class="form-control"
+                         aria-required="true">
+                </div>
+
+                <fieldset class="col-12 seating-fieldset">
+                  <legend>Seating preference (required)</legend>
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-hall"
+                           name="seating-preference"
+                           value="main hall"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-hall"
+                           class="form-check-label">Main Hall</label>
+                  </div>
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-bar"
+                           name="seating-preference"
+                           value="bar"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-bar"
+                           class="form-check-label">Bar Area</label>
+                  </div>
+
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-entertainment"
+                           name="seating-preference"
+                           value="entertainment"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-entertainment"
+                           class="form-check-label">Entretainment Hall/Holotable</label>
+
+                  </div>
+
+                </fieldset>
+
+                <div class="boxes-form col-12">
+                  <label for="dietary-preference"
+                         class="form-label">Dietary notes (optional, maximum 30 characters)</label>
+                  <textarea id="dietary-preference"
+                            name="dietary-preference"
+                            class="form-control"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="newsletter form-check">
+                    <input type="checkbox"
+                           id="newsletter"
+                           name="newsletter"
+                           class="form-check-input">
+                    <label for="newsletter"
+                           class="form-check-label">Newsletter (optional): Check this if you wish to join a more selective circle and claim the knowledge to shape your destiny.</label>
+                  </div>
+
+                </div>
+
+                <div class="button-area col-12 d-flex flex-wrap gap-2">
+                  <button type="submit"
+                          class="btn btn-foundry">Submit Request</button>
+                  <button type="reset"
+                          class="btn btn-outline-light">Reset</button>
+                </div>
+
+              </div>
+
+            </form>
+
+          </section>
+
+          <section class="border-style">
+            <h2 id="location-second"> Request a reservation at our Second Location</h2>
+            <p>Request a reservation at our second location. Always two there are...maybe more depends on the flow of credits</p>
+            <p>We reserve the right to slay you where you stand if you walk-in</p>
+            <img src="images/secondary%20location.png"
+                 alt="Secondary location">
+            <form id="reservation-second"
+                  class="reservation-form mt-4"
+                  data-location="Second Location"
+                  novalidate="" aria-labelledby="location-second">
+              <div class="reservation-feedback"
+                   aria-live="polite"
+                   aria-atomic="true"></div>
+              <div class="row g-3">
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="guest-name2"
+                         class="form-label">Name (required, maximum 20 characters)</label>
+                  <input type="text"
+                         name="guest-name"
+                         id="guest-name2"
+                         class="form-control"
+                         aria-required="true"
+                         autocomplete="name">
+                </div>
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="guest-email2"
+                         class="form-label">Email (required)</label>
+                  <input type="email"
+                         id="guest-email2"
+                         name="guest-email"
+                         class="form-control"
+                         aria-required="true"
+                         autocomplete="email">
+                </div>
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="group-size2"
+                         class="form-label">Party size (required)</label>
+                  <select id="group-size2"
+                          name="group-size" class="form-select" aria-required="true">
+                    <option value="">Party Size</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="reservation-date2"
+                         class="form-label">Date of reservation (required)</label>
+                  <input type="date"
+                         id="reservation-date2"
+                         name="reservation-date"
+                         class="form-control"
+                         aria-required="true">
+                </div>
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="reservation-time2"
+                         class="form-label">Time of reservation (required)</label>
+                  <input type="time"
+                         id="reservation-time2"
+                         name="reservation-time"
+                         class="form-control"
+                         aria-required="true">
+                </div>
+                <fieldset class="col-12 seating-fieldset">
+                  <legend>Seating preference (required)</legend>
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-hall2"
+                           name="seating-preference"
+                           value="main hall"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-hall2"
+                           class="form-check-label">Main Hall</label>
+                  </div>
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-bar2"
+                           name="seating-preference"
+                           value="bar"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-bar2"
+                           class="form-check-label">Bar Area</label>
+                  </div>
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-entertainment2"
+                           name="seating-preference"
+                           value="entertainment"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-entertainment2"
+                           class="form-check-label">Entretainment Hall/Holotable</label>
+                  </div>
+                </fieldset>
+                <div class="boxes-form col-12">
+                  <label for="dietary-preference2"
+                         class="form-label">Dietary notes (optional, maximum 30 characters)</label>
+                  <textarea id="dietary-preference2"
+                            name="dietary-preference"
+                            class="form-control"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="newsletter form-check">
+                    <input type="checkbox"
+                           id="newsletter2"
+                           name="newsletter"
+                           class="form-check-input">
+                    <label for="newsletter2"
+                           class="form-check-label">Newsletter (optional): Check this if you wish to join a more selective circle and claim the knowledge to shape your destiny.</label>
+                  </div>
+                </div>
+                <div class="button-area col-12 d-flex flex-wrap gap-2">
+                  <button type="submit"
+                          class="btn btn-foundry">Submit Request</button>
+                  <button type="reset"
+                          class="btn btn-outline-light">Reset</button>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class="border-style">
+            <h2 id="location-triumvirate"> Request a reservation at our Triumvirate Location</h2>
+            <p>Request a reservation at the Triumvirate Location</p>
+            <p>We reserve the right to slay you where you stand if you walk-in</p>
+            <img class="reservations" src="images/third%20location.png" alt="Third location" loading="lazy">
+            <form id="reservation-triumvirate" class="reservation-form mt-4" data-location="Triumvirate Location" novalidate="" aria-labelledby="location-triumvirate">
+
+
+              <div class="reservation-feedback" aria-live="polite" aria-atomic="true"></div>
+
+              <div class="row g-3">
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="guest-name3" class="form-label">Name (required, maximum 20 characters)</label>
+                  <input type="text" name="guest-name" id="guest-name3" class="form-control" aria-required="true" autocomplete="name">
+                </div>
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="guest-email3" class="form-label">Email (required)</label>
+                  <input type="email"
+                         id="guest-email3"
+                         name="guest-email"
+                         class="form-control"
+                         aria-required="true"
+                         autocomplete="email">
+                </div>
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="group-size3"
+                         class="form-label">Party size (required)</label>
+                  <select id="group-size3"
+                          name="group-size" class="form-select" aria-required="true">
+                    <option value="">Party Size</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="reservation-date3" class="form-label">Date of reservation (required)</label>
+                  <input type="date"
+                         id="reservation-date3"
+                         name="reservation-date"
+                         class="form-control"
+                         aria-required="true">
+                </div>
+                <div class="boxes-form col-12 col-md-6">
+                  <label for="reservation-time3" class="form-label">Time of reservation (required)</label>
+                  <input type="time"
+                         id="reservation-time3"
+                         name="reservation-time"
+                         class="form-control"
+                         aria-required="true">
+                </div>
+                <fieldset class="col-12 seating-fieldset">
+                  <legend>Seating preference (required)</legend>
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-hall3"
+                           name="seating-preference"
+                           value="main hall"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-hall3"
+                           class="form-check-label">Main Hall</label>
+                  </div>
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-bar3"
+                           name="seating-preference"
+                           value="bar"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-bar3"
+                           class="form-check-label">Bar Area</label>
+                  </div>
+                  <div class="radio-option form-check">
+                    <input type="radio"
+                           id="seating-preference-entertainment3"
+                           name="seating-preference"
+                           value="entertainment"
+                           class="form-check-input"
+                           aria-required="true">
+                    <label for="seating-preference-entertainment3"
+                           class="form-check-label">Entretainment Hall/Holotable</label>
+                  </div>
+                </fieldset>
+                <div class="boxes-form col-12">
+                  <label for="dietary-preference3"
+                         class="form-label">Dietary notes (optional, maximum 30 characters)</label>
+                  <textarea id="dietary-preference3"
+                            name="dietary-preference"
+                            class="form-control"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="newsletter form-check">
+                    <input type="checkbox"
+                           id="newsletter3"
+                           name="newsletter"
+                           class="form-check-input">
+                    <label for="newsletter3"
+                           class="form-check-label">Newsletter (optional): Check this if you wish to join a more selective circle and claim the knowledge to shape your destiny.</label>
+                  </div>
+                </div>
+                <div class="button-area col-12 d-flex flex-wrap gap-2">
+                  <button type="submit"
+                          class="btn btn-foundry">Submit Request</button>
+                  <button type="reset"
+                          class="btn btn-outline-light">Reset</button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© 49 ABY(After the Battle of Yavin) The Crimson Hound Foundry</p>
+    </footer>
+  </body>
+</html>

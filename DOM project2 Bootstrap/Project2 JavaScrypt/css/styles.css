@@ -1,0 +1,193 @@
+.metamorphous-regular {
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #111111;
+  color: #eeeeee;
+  font-family: "Metamorphous", serif;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Metamorphous", serif;
+  color: #c9a227;
+}
+
+h1 {
+  text-align: center;
+}
+
+.foundry-navbar {
+  background-color: #4b0000;
+}
+
+.foundry-navbar .navbar-brand {
+  color: white;
+  white-space: normal;
+  max-width: calc(100% - 70px);
+  font-size: 1rem;
+}
+
+.navbar-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.foundry-navbar .nav-link {
+  color: white;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.foundry-navbar .nav-link:hover,
+.foundry-navbar .nav-link:focus-visible,
+.foundry-navbar .nav-link.active {
+  background-color: #c9a227;
+  color: #111111;
+}
+
+.border-style {
+  background-color: #1c1c1c;
+  border: 3px solid #6b0000;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px black;
+  text-align: center;
+}
+
+.moto {
+  text-align: center;
+  font-style: italic;
+}
+
+.logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.border-style img {
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.table {
+  --bs-table-bg: #1a1a1a;
+  --bs-table-color: #eeeeee;
+  --bs-table-striped-bg: #292929;
+  --bs-table-striped-color: #eeeeee;
+  --bs-table-border-color: #777777;
+  margin-bottom: 0;
+}
+
+caption {
+  caption-side: top;
+  font-family: "Metamorphous", serif;
+  font-size: 24px;
+  color: #c9a227;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.table thead th {
+  background-color: #650000;
+  color: white;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.reservation-form {
+  text-align: left;
+}
+
+.form-control, .form-select, .form-check-label,
+.form-label, .reservation-feedback {
+  font-family: "Metamorphous", serif;
+}
+
+.form-control, .form-select {
+  background-color: #111111;
+  color: #eeeeee;
+  border-color: #777777;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #111111;
+  color: #eeeeee;
+  border-color: #c9a227;
+  box-shadow: 0 0 0 0.2rem rgb(201 162 39 / 25%);
+}
+
+textarea.form-control {
+  min-height: 80px;
+}
+
+.seating-fieldset {
+  border: 1px solid #777777;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.seating-fieldset legend {
+  float: none;
+  width: auto;
+  padding: 0 6px;
+  font-size: 1rem;
+  color: #c9a227;
+}
+
+.form-check-input:checked {
+  background-color: #650000;
+  border-color: #c9a227;
+}
+
+.form-check-input:focus {
+  border-color: #c9a227;
+  box-shadow: 0 0 0 0.2rem rgb(201 162 39 / 25%);
+}
+
+.btn-foundry {
+  --bs-btn-bg: #650000;
+  --bs-btn-color: white;
+  --bs-btn-border-color: #c9a227;
+  --bs-btn-hover-bg: #8b0000;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-border-color: #c9a227;
+  --bs-btn-active-bg: #4b0000;
+  --bs-btn-active-color: white;
+  --bs-btn-active-border-color: #c9a227;
+}
+
+.reservation-feedback .alert {
+  overflow-wrap: anywhere;
+}
+
+.reservation-feedback .alert:focus {
+  outline: 2px solid #c9a227;
+  outline-offset: 2px;
+}
+
+footer {
+  background-color: #4b0000;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
