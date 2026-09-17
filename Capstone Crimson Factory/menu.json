@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Forge Burger",
+    "description": "A grilled burger with darkside fries and a house drink.",
+    "price": 5,
+    "category": "Lunch",
+    "image": "images/forge-burger.png"
+  },
+  {
+    "name": "Dark Side Ramen",
+    "description": "Black noodles, egg, vegetables, and spicy crimson broth.",
+    "price": 5,
+    "category": "Dinner",
+    "image": "images/dark-side-ramen.png"
+  },
+  {
+    "name": "Molten Fudge",
+    "description": "Warm chocolate fudge cake with a cool scoop of ice cream.",
+    "price": 5,
+    "category": "Dinner",
+    "image": "images/molten-fudge.png"
+  },
+  {
+    "name": "Dawn Patrol Bento",
+    "description": "Scrambled eggs, roasted potatoes, and smoked sausage.",
+    "price": 8.5,
+    "category": "Breakfast",
+    "image": "images/dawn-patrol-bento.png"
+  },
+  {
+    "name": "Gear-Griddle Cakes",
+    "description": "Buttermilk pancakes, berries, butter, and maple syrup.",
+    "price": 7.25,
+    "category": "Breakfast",
+    "image": "images/gear-griddle-cakes.png"
+  },
+  {
+    "name": "Airship Engineer Wrap",
+    "description": "A breakfast wrap filled with egg, cheese, and peppers.",
+    "price": 6.75,
+    "category": "Breakfast",
+    "image": "images/airship-engineer-wrap.png"
+  },
+  {
+    "name": "Brass Boiler Oats",
+    "description": "Warm oats with cinnamon, apple, and toasted nuts.",
+    "price": 5.5,
+    "category": "Breakfast",
+    "image": "images/brass-boiler-oats.png"
+  },
+  {
+    "name": "Hound Lord Bento",
+    "description": "Grilled chicken, steamed rice, and roasted vegetables.",
+    "price": 10.5,
+    "category": "Lunch",
+    "image": "images/hound-lord-bento.png"
+  },
+  {
+    "name": "Mechanical Courier Bowl",
+    "description": "Crisp tofu, rice, cabbage, and brass-pepper glaze.",
+    "price": 9.25,
+    "category": "Lunch",
+    "image": "images/mechanical-courier-bowl.png"
+  },
+  {
+    "name": "Bounty Hunter Sandwich",
+    "description": "Roast beef, cheese, and caramelized onions on toasted bread.",
+    "price": 9.75,
+    "category": "Lunch",
+    "image": "images/bounty-hunter-sandwich.png"
+  },
+  {
+    "name": "Darth Trak's Foundry Steak",
+    "description": "Grilled steak, garlic potatoes, and charred vegetables.",
+    "price": 18.5,
+    "category": "Dinner",
+    "image": "images/foundry-steak.png"
+  },
+  {
+    "name": "Crimson Reactor Salmon",
+    "description": "Glazed salmon, seasoned rice, and steamed green vegetables.",
+    "price": 15.75,
+    "category": "Dinner",
+    "image": "images/crimson-reactor-salmon.png"
+  }
+]

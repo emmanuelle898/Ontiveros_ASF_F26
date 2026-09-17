@@ -1,0 +1,336 @@
+/* Color theme: charcoal and black create an industrial setting and darkside aura, crimson matches
+   the restaurant name and sith lightsabers, and brass goldfor the contrast to the red and black. */
+
+:root {
+  --foundry-black: #0d0d0d;
+  --foundry-panel: rgba(20, 20, 20, 0.94);
+  --foundry-red: #6b0000;
+  --foundry-light-red: #9d1111;
+  --foundry-gold: #d1aa3c;
+  --foundry-text: #f1f1f1;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--foundry-black);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--foundry-text);
+  font-family: "Cinzel", serif;
+  margin: 0;
+}
+
+
+.splash-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.72),
+  rgba(0, 0, 0, 0.88)),
+  url("images/entrance-view.png");
+}
+
+.about-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76),
+  rgba(0, 0, 0, 0.9)),
+  url("images/restaurant-view.png");
+}
+
+.menu-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.78),
+  rgba(0, 0, 0, 0.92)),
+  url("images/holotable.png");
+}
+
+.reservations-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.78),
+  rgba(0, 0, 0, 0.92)),
+  url("images/original-location.png");
+}
+
+.error-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.78),
+  rgba(0, 0, 0, 0.9)),
+  url("images/logo.png");
+}
+
+
+h1, .navbar {
+  font-family: "Cinzel", serif;
+}
+
+h1, h2, h3 {
+  color: var(--foundry-gold);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.foundry-navbar {
+  background-color: rgba(67, 0, 0, 0.97);
+  border-bottom: 2px solid var(--foundry-gold);
+}
+
+.navbar-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.foundry-navbar .navbar-brand {
+  max-width: calc(100% - 70px);
+  color: white;
+  font-size: 1rem; /* This I had to google it because I wasnt able to get he right size */
+  white-space: normal;
+}
+
+.foundry-navbar .navbar-brand:hover,
+.foundry-navbar .navbar-brand:focus {
+  color: var(--foundry-gold);
+}
+
+.foundry-navbar .nav-link {
+  color: white;
+  border-radius: 4px;
+  margin-left: 4px;
+  padding: 9px 12px;
+}
+
+.foundry-navbar .nav-link:hover,
+.foundry-navbar .nav-link:focus,
+.foundry-navbar .nav-link.active {
+  background-color: var(--foundry-gold);
+  color: var(--foundry-black);
+}
+
+.page-panel {
+  background-color: var(--foundry-panel);
+  border: 2px solid var(--foundry-red);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+  padding: 24px;
+}
+
+.hero-panel {
+  max-width: 900px;
+  margin: 4vh auto 0;
+  padding: 34px;
+}
+
+.hero-logo {
+  display: block;
+  width: 165px;
+  margin: 0 auto 18px;
+}
+
+.eyebrow {
+  color: var(--foundry-gold);
+  font-size: 0.82rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.tagline {
+  color: var(--foundry-gold);
+  font-family: "Cinzel", serif;
+  font-style: italic;
+}
+
+.small-card {
+  text-align: center;
+}
+
+.feature-icon {
+  color: var(--foundry-gold);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.btn-foundry {
+  --bs-btn-bg: var(--foundry-red);
+  --bs-btn-color: white;
+  --bs-btn-border-color: var(--foundry-gold);
+  --bs-btn-hover-bg: var(--foundry-light-red);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-border-color: var(--foundry-gold);
+  --bs-btn-active-bg: #4a0000;
+  --bs-btn-active-color: white;
+  --bs-btn-active-border-color: var(--foundry-gold);
+}
+
+
+.content-card img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+.menu-section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  max-width: 950px;
+  overflow: hidden;
+  background-color: #151515;
+  border: 2px solid var(--foundry-gold);
+  color: var(--foundry-text);
+}
+
+.menu-card-image {
+  display: block;
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.menu-card .card-body {
+  min-height: 300px;
+  padding: 28px;
+}
+
+.menu-category {
+  align-self: flex-start;
+  background-color: var(--foundry-red);
+  border: 1px solid var(--foundry-gold);
+  border-radius: 20px;
+  color: white;
+  padding: 5px 12px;
+}
+
+.menu-price {
+  color: var(--foundry-gold);
+  font-size: 1.65rem;
+  font-weight: bold;
+}
+
+
+.location-card {
+  overflow: hidden;
+  background-color: var(--foundry-panel);
+  border: 2px solid var(--foundry-red);
+  color: var(--foundry-text);
+}
+
+.location-card .card-img-top {
+  height: 210px;
+  object-fit: cover;
+}
+
+.form-panel {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form-control,
+.form-select {
+  background-color: #111111;
+  border-color: #777777;
+  color: white;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #111111;
+  border-color: var(--foundry-gold);
+  box-shadow: 0 0 0 0.2rem rgba(209, 170, 60, 0.25);
+  color: white;
+}
+
+.form-select option {
+  background-color: #111111;
+  color: white;
+}
+
+.seating-fieldset {
+  border: 1px solid #777777;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.seating-fieldset legend {
+  float: none;
+  width: auto;
+  color: var(--foundry-gold);
+  font-size: 1rem;
+  padding: 0 7px;
+}
+
+.form-check-input:checked {
+  background-color: var(--foundry-red);
+  border-color: var(--foundry-gold);
+}
+
+.error-layout {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.error-panel {
+  max-width: 700px;
+}
+
+.error-number {
+  color: var(--foundry-gold);
+  font-family: "Cinzel", serif;
+  font-size: clamp(4rem, 14vw, 8rem);
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgba(67, 0, 0, 0.97);
+  border-top: 2px solid var(--foundry-gold);
+  padding: 18px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .menu-card-image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .page-panel,
+  .hero-panel {
+    padding: 19px;
+  }
+
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .foundry-navbar .navbar-brand {
+    font-size: 0.83rem;
+  }
+
+  .menu-card-image {
+    height: 265px;
+  }
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Crimson Hound Foundry</title>
+
+    <meta name="description" content="Welcome to The Crimson Hound Foundry, a steampunk restaurant for crews, travelers, and citizens.">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+
+  </head>
+
+  <body class="splash-page">
+    <header>
+      <nav class="navbar navbar-expand-lg foundry-navbar" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img class="navbar-logo" src="images/logo.png" alt="Crimson Hound logo">
+            <span>The Crimson Hound Foundry</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Landing</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="reservations.html">Reservations</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5">
+      <section class="page-panel hero-panel text-center">
+        <img class="hero-logo" src="images/logo.png" alt="The Crimson Hound Foundry emblem">
+        <p class="eyebrow">Galactic Industrial District</p>
+        <h1>The Crimson Hound Foundry</h1>
+        <p class="tagline">Loyalty. Discipline. Tradition. Excellence.</p>
+        <p class="lead">A gathering place where airship crews, engineers, patrol officers, bounty hunters, and local citizens meet for bold food and mechanical entertainment.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+          <a class="btn btn-foundry" href="menu.html">View the Menu</a>
+          <a class="btn btn-outline-light" href="reservations.html">Request a Table</a>
+        </div>
+      </section>
+
+      <section class="row g-4 mt-1">
+        <div class="col-12 col-md-4">
+          <article class="page-panel small-card h-100">
+
+            <i class="fa-solid fa-utensils feature-icon"></i> <!--Font Awesome fork and knife-->
+            <h2>Foundry Food</h2>
+            <p>Breakfast, lunch, and dinner made for travelers who need a dependable meal.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="page-panel small-card h-100">
+
+            <i class="fa-solid fa-gamepad feature-icon" ></i>  <!--Font Awesome icon controller-->
+            <h2>Entertainment</h2>
+            <p>Holotable games and exhibition matches give every visitor something to enjoy.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="page-panel small-card h-100">
+
+            <i class="fa-solid fa-location-dot feature-icon"></i>  <!--Font Awesome location icon-->
+            <h2>Three Locations</h2>
+            <p>Choose the Foundry location that is closest to your route through the city.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 49 ABY The Crimson Hound Foundry</p>
+    </footer>
+  </body>
+</html>
